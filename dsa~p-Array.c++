@@ -65,6 +65,5 @@ cout<<"Min value is "<<getMin(num,size)<<endl;
 
 
 
-
     return 0;
 }
