@@ -49,6 +49,15 @@ void swap(int arr[], int n){
 
 }
 
+void unique(int arr[], int n){
+ 
+    int ans =0;
+    for(int i=0;i< n; i++){
+        ans = ans^arr[i];
+    }
+ cout<<ans<<endl;
+}
+
 void printArray(int arr[], int n){
 
   for(int i = 0; i < n; i++){
@@ -103,15 +112,21 @@ int main(){
 
 //swap problem
 
-int even[8] = {1,2,3,4,5,6,7,8};
-int odd[7] = {1,2,3,4,5,6,7};
+// int even[8] = {1,2,3,4,5,6,7,8};
+// int odd[7] = {1,2,3,4,5,6,7};
 
- swap(even, 8);
- printArray(even, 8);
+//  swap(even, 8);
+//  printArray(even, 8);
 
- cout<<endl;
+//  cout<<endl;
 
- swap(odd, 7);
- printArray(odd, 7);
+//  swap(odd, 7);
+//  printArray(odd, 7);
+
+//findig unquie no.
+
+int arr[8] = {1,2,3,3,2,1,5};
+
+unique(arr, 7);
 
 }
