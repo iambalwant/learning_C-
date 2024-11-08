@@ -79,14 +79,20 @@ int main(){
 
 //reverse array
 
-int arr[6] = {1,2,4,6,7,8};
-int brr[5] = {3,5,2,3,7};
+// int arr[6] = {1,2,4,6,7,8};
+// int brr[5] = {3,5,2,3,7};
 
-reverse(arr, 6);
-reverse(brr, 5);
+// reverse(arr, 6);
+// reverse(brr, 5);
 
-printArray(arr,6); 
-printArray(brr,5); 
+// printArray(arr,6); 
+// printArray(brr,5); 
 
-return 0;
+// return 0;
+
+
+//swap problem
+
+
+
 }
