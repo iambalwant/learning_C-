@@ -39,6 +39,16 @@ void reverse(int arr[], int n){
   
 }
 
+void swap(int arr[], int n){
+
+  for(int i = 0;i<n;i+=2){
+    if(i+1 < n){
+      swap(arr[i], arr[i+1]);
+    }
+  }
+
+}
+
 void printArray(int arr[], int n){
 
   for(int i = 0; i < n; i++){
@@ -93,6 +103,15 @@ int main(){
 
 //swap problem
 
+int even[8] = {1,2,3,4,5,6,7,8};
+int odd[7] = {1,2,3,4,5,6,7};
 
+ swap(even, 8);
+ printArray(even, 8);
+
+ cout<<endl;
+
+ swap(odd, 7);
+ printArray(odd, 7);
 
 }
