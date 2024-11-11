@@ -58,6 +58,20 @@ void unique(int arr[], int n){
  cout<<ans<<endl;
 }
 
+void duplicate(int arr[], int n){
+
+  int ans = 0;
+
+  for(int i = 0; i< n; i++){
+    ans = ans^arr[i];
+  }
+  for(int i = 0; i< n; i++){
+    ans = ans^i;
+  }
+
+cout<<ans;
+}
+
 void printArray(int arr[], int n){
 
   for(int i = 0; i < n; i++){
@@ -125,8 +139,15 @@ int main(){
 
 //findig unquie no.
 
-int arr[8] = {1,2,3,3,2,1,5};
+// int arr[8] = {1,2,3,3,2,1,5};
 
-unique(arr, 7);
+// unique(arr, 7);
 
+//duplicate in array
+
+int arr[6] ={2,1,4,2,3,6};
+
+duplicate(arr, 6);
+
+return 0;
 }
